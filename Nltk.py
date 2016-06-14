@@ -19,5 +19,5 @@ def wordTokanize(text):
 #pos tagging
 def posTagging(tokens):
     tagged_tokens = pos_tag(tokens)
-    print(tagged_tokens)
+    #print(tagged_tokens)
     return tagged_tokens

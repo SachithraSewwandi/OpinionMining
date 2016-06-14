@@ -9,13 +9,12 @@ def createTable(con):
 
         cur = con.cursor()
         cur.execute("DROP TABLE IF EXISTS TableTest")
-        cur.execute("CREATE TABLE TableTest(Id INT PRIMARY KEY AUTO_INCREMENT, \
-                     COMMENT VARCHAR(25))")
+        cur.execute("CREATE TABLE TableTest(Id INT PRIMARY KEY AUTO_INCREMENT, COMMENT VARCHAR(25))")
         cur.execute("INSERT INTO TableTest(COMMENT) VALUES('Babbo Natale is good')")
         cur.execute("INSERT INTO TableTest(COMMENT) VALUES('Tizio was a murderer')")
         cur.execute("INSERT INTO TableTest(COMMENT) VALUES('Caio is good')")
         cur.execute("INSERT INTO TableTest(COMMENT) VALUES('Sempronio swims a lot')")
-        cur.execute("INSERT INTO TableTest(COMMENT) VALUES('Giulio Cesare works hard')")
+        cur.execute("INSERT INTO TableTest(COMMENT) VALUES('Caio Cesare works hard')")
 
 
 
