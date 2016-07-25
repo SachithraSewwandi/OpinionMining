@@ -39,7 +39,7 @@ def correct(word):
     #print max(candidates, key=NWORDS.get)
     return max(candidates, key=NWORDS.get)
 
-word=words(file('big1.txt').read())
+word = words(file('NotebookCooler.txt').read())
 print word
 target=open('write.txt','w')
 for wr in word:
