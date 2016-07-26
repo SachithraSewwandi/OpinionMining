@@ -1,0 +1,4 @@
+java is good for Object-Oriented-Programming
+Main Object-Oriented-Programming concepts are encapsulation, polymorphism, abstraction and inheritance
+abstraction deals with the outside view of an interface
+polymorphism is brilliant
