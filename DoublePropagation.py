@@ -8,7 +8,7 @@ from nltk.stem.wordnet import WordNetLemmatizer
 
 features = []
 
-feature_2 = []
+opinions = []
 
 
 def featureExtract_rule1(sentence):
@@ -20,10 +20,12 @@ def featureExtract_rule1(sentence):
             word_pos = word_pos.replace('\n', '')
             for post in postaglist:
                 if (word_pos == post[0]):
+                    opinions.append(word_pos)
                     for postn in postaglist:
                         if ((postn[1] == 'NN' or postn[1] == 'NNS') and ((postn[0] in feature_1) == False)):
                             feature_1.append(postn[0])
                 if (word_neg == post[0]):
+                    opinions.append(word_neg)
                     for postn in postaglist:
                         if ((postn[1] == 'NN' or postn[1] == 'NNS') and ((postn[0] in feature_1) == False)):
                             feature_1.append(postn[0])
@@ -79,14 +81,14 @@ def controller(fileName):
             feature = featureExtract_rule1(row)
             feature1.extend(feature)
 
-    print feature1
+    #print feature1
 
     with open(fileName, 'r') as pointer2:
         for row in pointer2:
             featureExtract_rule2(row,feature1)
 
     #print 'featuress1'
-    print feature1
+    #print feature1
 
 
     #return feature1
@@ -97,12 +99,14 @@ def controller(fileName):
     #print 'finalyly//////////////////'
     #print feature2
 
-    return feature_counter.most_common(20)
+    #return feature_counter.most_common(20)
     # return counter
-    #return feature2
+    return feature1
 
 # controller()
 
 
-features = controller("write.txt")
+features = controller("comments.txt")
 print(features)
+print 'opinions'
+print opinions
