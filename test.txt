@@ -1,4 +1,8 @@
 java is good for Object-Oriented-Programming
+Object-Oriented-Programming is amazing
 Main Object-Oriented-Programming concepts are encapsulation, polymorphism, abstraction and inheritance
 abstraction deals with the outside view of an interface
-polymorphism is brilliant
+polymorphism is not bad
+I would highly recommend Python over Java.
+Java is almost always faster, but it doesnt matter.
+The output image gets  worse if we block more of the frequencies.
