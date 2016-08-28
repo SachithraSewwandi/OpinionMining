@@ -1,4 +1,6 @@
 import re, collections
+from nltk.corpus import wordnet as wn
+from itertools import chain
 
 def words(text): return re.findall('[a-z]+', text.lower())
 #print words(file('big1.txt').read())
@@ -36,9 +38,30 @@ def correct(word):
     candidates = known([word]) or known(edits1(word)) or known_edits2(word) or [word]
     return max(candidates, key=NWORDS.get)
 
-word = words(file('big1.txt').read())
-print word
-target=open('write.txt','w')
-for wr in word:
-    target.write(correct(wr)+" ")
 
+
+# word = file('test.txt').read()
+# #print word
+# sentence=nltk.sent_tokenize(word)
+# #print sentence
+# target=open('write.txt','w')
+# for sent in sentence:
+#     print sent
+#     for word in nltk.word_tokenize(sent):
+#         #print word
+#         if not wordnet.synsets(word):
+#             target.write(correct(word)+" ")
+#             print "****" + word
+#         else:
+#             print "///////////" + word
+#             target.write(word+" ")
+#     target.write("/n")
+# target=open('write.txt','w')
+# for wr in word:
+#     #print wordnet.synsets(wr);
+#    if not wordnet.synsets(wr):
+#         target.write(correct(wr)+" ")
+#     else:
+#        target.write(wr+" ")
+#
+# target.close()
