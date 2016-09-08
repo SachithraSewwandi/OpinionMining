@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< 38489e8a11eda82a6d29b0d77bb1d5781859bf60
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
@@ -13,3 +14,7 @@
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 2.7.6 (/usr/bin/python2.7)" project-jdk-type="Python SDK" />
 </project>
 
+=======
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 2.7.11+ (/usr/bin/python2.7)" project-jdk-type="Python SDK" />
+</project>
+>>>>>>> tweets extraction to a txt file

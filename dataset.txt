@@ -1,5 +1,5 @@
 However, it is not as good as a low-pass filter.
-Java is almost always faster, but it doesn’t matter.
+Java is almost always faster, but it doesnt matter.
 As a language, Java has lot more coding compared to Python.
 Main Object-Oriented-Programming concepts are encapsulation, polymorphism, abstraction and inheritance.
 C simply has a different, simpler, and better defined approach to data abstraction.

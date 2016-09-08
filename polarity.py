@@ -63,6 +63,6 @@ def polarityCheckerNLTK(fileName):
 
 
 print "with TextBlob"
-polarityCheckerTextBlob("test.txt")
+polarityCheckerTextBlob("dataset.txt")
 print "With NLTK/////////////"
 polarityCheckerNLTK("test.txt")

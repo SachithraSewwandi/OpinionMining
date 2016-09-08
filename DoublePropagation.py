@@ -106,7 +106,7 @@ def controller(fileName):
 # controller()
 
 
-features = controller("comments.txt")
+features = controller("dataset.txt")
 print(features)
 print 'opinions'
 print opinions

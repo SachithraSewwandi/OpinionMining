@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< 38489e8a11eda82a6d29b0d77bb1d5781859bf60
       <module fileurl="file://$PROJECT_DIR$/.idea/dbconnect.iml" filepath="$PROJECT_DIR$/.idea/dbconnect.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/OpinionMining.iml" filepath="$PROJECT_DIR$/.idea/OpinionMining.iml" />
+>>>>>>> tweets extraction to a txt file
     </modules>
   </component>
 </project>
